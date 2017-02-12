@@ -5,12 +5,12 @@
     <div class="bottom">
         <div class="login-box">
             <div class="input-box">
-                <input type="text">
+                <input type="text" #username>
             </div>
             <div class="input-box">
-                <input type="text">
+                <input type="text" #password>
             </div>
         </div>
-        <button>登录</button>
+        <button (click)="login(username.value, password.value)">登录</button>
     </div>
 </div>

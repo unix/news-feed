@@ -2,6 +2,7 @@
  * Created by WittBulter on 2017/2/11.
  */
 const {app, BrowserWindow} = require('electron')
+require('./browser/ipc/index')
 
 let win // 窗口对象引用 避免被自动关闭
 const createWindow = () =>{
@@ -25,3 +26,5 @@ const createWindow = () =>{
 app.on('ready', _ => createWindow())
 app.on('window-all-closed', _ => process.platform !== 'darwin'&& app.quit())
 app.on('activate', _ => win === null&& createWindow())
+
+
