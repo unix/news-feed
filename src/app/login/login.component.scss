@@ -4,20 +4,48 @@
 	.top {
 		width: 100%;
 		height: 55%;
-
+		background: url("assets/images/timg.jpeg") no-repeat;
+		background-size: cover;
+		background-position: center center;
 	}
 	.bottom {
 		width: 100%;
-		height: 45%;
-		.input-box {
+		padding: 20px 0;
+		.login-box {
 			width: 50%;
-			max-width: 200px;
+			max-width: 230px;
 			margin: 0 auto;
-			>input {
+			border: 1px solid #ddd;
+			border-radius: 2px;
+			overflow: hidden;
+			.input-box {
 				width: 100%;
-				height: 35px;
-				border-radius: 2px;
+				&:last-child {
+					border-top: 1px solid #ddd;
+				}
+				>input {
+					width: 100%;
+					height: 35px;
+					padding-left: 3px;
+					font-size: 18px;
+					border: none;
+					&:active, &:focus {
+						outline: none;
+					}
+				}
 			}
+		}
+		button {
+			width: 50%;
+			max-width: 230px;
+			margin: 15px auto;
+			height: 40px;
+			border-radius: 3px;
+			background: #08D088;
+			color: #EEFAF6;
+			font-size: 18px;
+			display: block;
+			border: none;
 		}
 	}
 }
