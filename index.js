@@ -9,6 +9,8 @@ const createWindow = () =>{
 		width: 700,
 		height: 500,
 		show: false,
+		frame: false,
+		resizable: true
 	});
 	win.loadURL(`file://${__dirname}/dist/index.html`);
 

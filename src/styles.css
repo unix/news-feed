@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body {
+	width: 100%;
+	height: 100%;
+}
+html {
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	background: #FCFCFC;
+}
+body {
+	font-family: -apple-system, 'Helvetica Neue', 'Lantinghei SC', 'Open Sans', Arial, 'Hiragino Sans GB','Microsoft YaHei',Helvetica;
+	font-size: 16px;
+	line-height: 1.4;
+	-webkit-font-smoothing: antialiased;
+	text-size-adjust: 100%;
+}
+
