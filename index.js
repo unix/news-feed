@@ -2,29 +2,12 @@
  * Created by WittBulter on 2017/2/11.
  */
 const {app, BrowserWindow} = require('electron')
+const screen = require('./browser/screen')
 require('./browser/ipc/index')
+const url = `file://${__dirname}/dist/index.html`
 
-let win // 窗口对象引用 避免被自动关闭
-const createWindow = () =>{
-	win = new BrowserWindow({
-		width: 700,
-		height: 500,
-		show: false,
-		frame: false,
-		resizable: true
-	});
-	win.loadURL(`file://${__dirname}/dist/index.html`);
-
-	win.webContents.openDevTools();
-	win.on('closed', () => win = null)
-	win.on('ready-to-show', () =>{
-		win.show()
-		win.focus()
-	})
-}
-
-app.on('ready', _ => createWindow())
+app.on('ready', _ => screen.setBaseUrl(url).open())
 app.on('window-all-closed', _ => process.platform !== 'darwin'&& app.quit())
-app.on('activate', _ => win === null&& createWindow())
+app.on('activate', _ => win === null&& screen.open())
 
 
