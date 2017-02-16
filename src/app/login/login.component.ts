@@ -24,19 +24,12 @@ export class LoginComponent implements OnInit {
             pw: pw
         }).subscribe(
             next =>{
-                console.log(next);
+                this.router.navigate(['/main'])
             }
         )
     }
 
     ngOnInit (){
-        this.route.params
-            .forEach((params: Params) => {
-                const session = params['session']
-                if (session){
-                    this.router.navigate(['/main'])
-                }
-            })
     }
 
 }

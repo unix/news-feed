@@ -6,7 +6,7 @@ const screen = require('../../screen')
 module.exports = {
 	login: (e, user) =>{
 		// todo something
-		screen.open('console')
+		screen.setSize(1000, 720)
 		e.reply({msg: 'ok'})
 	}
 }

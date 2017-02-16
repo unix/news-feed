@@ -8,6 +8,6 @@ const url = `file://${__dirname}/dist/index.html`
 
 app.on('ready', _ => screen.setBaseUrl(url).open())
 app.on('window-all-closed', _ => process.platform !== 'darwin'&& app.quit())
-app.on('activate', _ => win === null&& screen.open())
+app.on('activate', _ => screen.activate())
 
 
