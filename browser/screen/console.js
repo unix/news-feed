@@ -15,7 +15,7 @@ module.exports = new class self {
 			frame: false,
 			resizable: true
 		});
-		win.loadURL(`${url}`)
+		win.loadURL(`${url}?session=true`)
 		win.webContents.openDevTools()
 		return win
 	}

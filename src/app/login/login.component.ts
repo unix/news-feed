@@ -1,5 +1,6 @@
 import {Component, OnInit} from '@angular/core'
 import {LoginService} from './login.service'
+import {Router, ActivatedRoute, Params} from '@angular/router'
 
 @Component({
     selector: 'app-login',
@@ -10,7 +11,9 @@ import {LoginService} from './login.service'
 export class LoginComponent implements OnInit {
 
     constructor (
-        private loginService: LoginService
+        private loginService: LoginService,
+        private router: Router,
+        private route: ActivatedRoute
     ){
     }
 
@@ -19,10 +22,21 @@ export class LoginComponent implements OnInit {
         this.loginService.login({
             name: name,
             pw: pw
-        })
+        }).subscribe(
+            next =>{
+                console.log(next);
+            }
+        )
     }
 
     ngOnInit (){
+        this.route.params
+            .forEach((params: Params) => {
+                const session = params['session']
+                if (session){
+                    this.router.navigate(['/main'])
+                }
+            })
     }
 
 }

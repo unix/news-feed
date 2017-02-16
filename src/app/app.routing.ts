@@ -12,6 +12,7 @@ import {MainComponent} from './main/main.component'
 export const appRoutes: Routes = [
     {path: '', component: LoginComponent},
     {path: 'login', component: LoginComponent},
+    {path: 'login/*', component: LoginComponent},
     {path: 'main', component: MainComponent}
 ]
 
