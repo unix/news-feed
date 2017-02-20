@@ -1,0 +1,4 @@
+{
+	"presets": ["es2016"],
+	"plugins": ["transform-async-to-generator", "syntax-async-functions", "transform-regenerator"]
+}
