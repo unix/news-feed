@@ -11,17 +11,18 @@ module.exports = new class Self extends Base {
 	}
 
 	start (){
-		// global.Storage.find({}, (err, d) =>{
-		// 	console.log(d);
-		// })
-		this.request()
-			.then(res =>{
-				console.log('全部储存完毕!');
-				global.Storage.loadDatabase()
-			})
-			.catch(err =>{
-				console.log(err);
-			})
+		global.Storage.count({}, (err, c) =>{
+			if (c || c > 0) return ;
+			this.request()
+				.then(res =>{
+					console.log('全部储存完毕!');
+					global.Storage.loadDatabase()
+				})
+				.catch(err =>{
+					console.log(err);
+				})
+		})
+
 	}
 
 	async request (){
