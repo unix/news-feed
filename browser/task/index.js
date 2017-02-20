@@ -3,5 +3,5 @@
  */
 
 module.exports = {
-	wangyi: require('./wangyi')
+	ifeng: require('./ifeng')
 }
