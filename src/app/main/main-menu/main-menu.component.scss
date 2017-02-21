@@ -1,0 +1,44 @@
+.menu {
+	width: 100%;
+	height: 100%;
+	background: #798298;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	.user {
+		width: 100%;
+		height: auto;
+		padding: 40px 15%;
+		overflow: hidden;
+		>.user-photo {
+			width: 70px;
+			height: 70px;
+			border-radius: 50%;
+			float: left;
+			cursor: pointer;
+		}
+		>.logout {
+			float: right;
+		}
+	}
+	.list {
+		width: 100%;
+		height: auto;
+		padding-top: 20px;
+		>li {
+			font-size: 22px;
+			color: #fff;
+			padding-left: 15%;
+			line-height: 55px;
+			letter-spacing: 3px;
+			cursor: pointer;
+			&.active {
+				background: #949db3;
+			}
+			&:hover {
+				background: #949db3;
+			}
+		}
+	}
+}
