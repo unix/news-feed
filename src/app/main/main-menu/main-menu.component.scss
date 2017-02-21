@@ -27,12 +27,13 @@
 		height: auto;
 		padding-top: 20px;
 		>li {
-			font-size: 22px;
+			font-size: 21px;
 			color: #fff;
 			padding-left: 15%;
 			line-height: 55px;
 			letter-spacing: 3px;
 			cursor: pointer;
+			transition: all 0.2s;
 			&.active {
 				background: #949db3;
 			}
