@@ -1,7 +1,7 @@
 <div class="detail" *ngIf="article">
     <h2>{{article.title}}</h2>
 
-    <div [innerHTML]="article.content | sanitize">
+    <div class="article-content" [innerHTML]="article.content | sanitize">
 
     </div>
 </div>
