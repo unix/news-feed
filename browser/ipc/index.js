@@ -10,6 +10,8 @@ ipcMain.on('api', (event, actionName, ...args) =>{
 		event.sender.send(`${actionName}reply`, replayObj, status);
 	}
 	if (api[actionName]){
-		api[actionName](Object.assign({reply: reply}, event), ...args)
+		api[actionName](event, ...args)
+			.then(res => reply(res))
+			.catch(err => reply({message: '应用出现了错误'}))
 	}
 })
