@@ -16,5 +16,15 @@ module.exports = {
 					resolve(data)
 				})
 		})
+	},
+	findArticleForID: id =>{
+		return new Promise((resolve, reject) =>{
+			global.Storage
+				.findOne({_id: id})
+				.exec((err, data) =>{
+					if (err) return reject(err)
+					resolve(data)
+				})
+		})
 	}
 }

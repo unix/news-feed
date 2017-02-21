@@ -1,3 +1,7 @@
-<div *ngIf="article" [innerHTML]="article | sanitize">
+<div class="detail" *ngIf="article">
+    <h2>{{article.title}}</h2>
 
+    <div [innerHTML]="article.content | sanitize">
+
+    </div>
 </div>
