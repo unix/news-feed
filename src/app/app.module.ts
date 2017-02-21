@@ -5,8 +5,10 @@ import {HttpModule} from '@angular/http'
 import {RouterModule} from '@angular/router'
 import {AppRoutingModule} from './app.routing'
 
+import {SharedModule} from './shared/shared.module'
+
 import {AppComponent} from './app.component'
-import {LoginComponent} from './login/login.component'
+import {LoginComponent} from './login/login.component';
 
 @NgModule({
     declarations: [
@@ -17,6 +19,7 @@ import {LoginComponent} from './login/login.component'
         BrowserModule,
         FormsModule,
         HttpModule,
+        SharedModule.forRoot(),
         RouterModule,
         AppRoutingModule
     ],

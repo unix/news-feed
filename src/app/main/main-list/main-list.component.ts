@@ -14,11 +14,13 @@ export class MainListComponent implements OnInit {
         private listService: ListService
     ){
     }
+    public list: any[] = []
+
     getList (page: number){
         this.listService.getList(page)
             .subscribe(
                 res =>{
-                    console.log(res);
+                    this.list.push(...res)
                 }
             )
     }

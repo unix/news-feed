@@ -1,14 +1,7 @@
-<ul class="list">
-    <li>
-        <h2>框蔷薇蔷薇很饥渴请我喝酒我去阿胶客气话胃口就好请问就回去</h2>
-        <div class="text">
-            <p>wehqwnjkehqwjebj取款机文本框蔷薇蔷薇很饥渴请我喝酒我去阿胶客气话胃口就好请问就回去我很酷EQ切气哭我就喝酒请我喝酒万泉河群文件饿乾坤无极额请问嗯哼群文件饿坏蔷薇科哈</p>
-        </div>
-    </li>
-    <li>
-        <h2>框蔷薇蔷薇很饥渴请我喝酒我去阿胶客气话胃口就好请问就回去</h2>
-        <div class="text">
-            <p>wehqwnjkehqwjebj取款机文本框蔷薇蔷薇很饥渴请我喝酒我去阿胶客气话胃口就好请问就回去我很酷EQ切气哭我就喝酒请我喝酒万泉河群文件饿乾坤无极额请问嗯哼群文件饿坏蔷薇科哈</p>
+<ul class="list" *ngIf="list&& list[0]">
+    <li *ngFor="let item of list">
+        <h2>{{item.title}}</h2>
+        <div class="text" [innerHTML]="item.content | sanitize">
         </div>
     </li>
 </ul>
