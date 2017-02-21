@@ -8,13 +8,15 @@ import {MainRoutingModule} from './main.routing'
 
 import {MainComponent} from './main.component'
 import {MainListComponent} from './main-list/main-list.component'
-import {MainDetailComponent} from './main-detail/main-detail.component'
+import {MainDetailComponent} from './main-detail/main-detail.component';
+import {MainMenuComponent} from './main-menu/main-menu.component'
 
 @NgModule({
     declarations: [
         MainComponent,
         MainListComponent,
-        MainDetailComponent
+        MainDetailComponent,
+        MainMenuComponent
     ],
     imports: [
         CommonModule,
