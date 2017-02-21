@@ -1,16 +1,30 @@
-import {Component, OnInit} from '@angular/core';
+import {Component, OnInit} from '@angular/core'
+import {Router, ActivatedRoute, Params} from '@angular/router'
+import {ListService} from './list.service'
 
 @Component({
     selector: 'app-main-list',
     templateUrl: './main-list.component.html',
-    styleUrls: ['./main-list.component.scss']
+    styleUrls: ['./main-list.component.scss'],
+    providers: [ListService]
 })
 export class MainListComponent implements OnInit {
 
-    constructor (){
+    constructor (
+        private listService: ListService
+    ){
+    }
+    getList (page: number){
+        this.listService.getList(page)
+            .subscribe(
+                res =>{
+                    console.log(res);
+                }
+            )
     }
 
     ngOnInit (){
+        this.getList(1)
     }
 
 }
