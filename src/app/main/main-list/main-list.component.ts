@@ -10,10 +10,10 @@ import {ListService} from './list.service'
 })
 export class MainListComponent implements OnInit {
 
-    constructor (
-        private listService: ListService
-    ){
+    constructor (private listService: ListService,
+                 private router: Router){
     }
+
     public list: any[] = []
 
     getList (page: number){
@@ -23,6 +23,10 @@ export class MainListComponent implements OnInit {
                     this.list.push(...res)
                 }
             )
+    }
+
+    goNext (id: string){
+        this.router.navigate(['/main/list', id])
     }
 
     ngOnInit (){
