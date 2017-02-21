@@ -33,7 +33,7 @@ module.exports = new class Self extends Base {
 				const content = await Self.request(links[index -1])
 				const article = await this.parseContent(content)
 				await this.saveContent(Object.assign({id: index}, article))
-				console.log(`第${index}篇文章:${article&&article.title}储存完毕`);
+				console.log(`第${index}篇文章:[${article&&article.title}] 储存完毕`);
 			}
 		} catch (err){
 			return Promise.reject(err)
@@ -51,8 +51,16 @@ module.exports = new class Self extends Base {
 		if (!html) return;
 		const $ = cheerio.load(html)
 		const title = $('title').text()
+		const description = $('meta[name="description"]').attr('content')
 		const content = $('.yc_con_txt').html()
-		return {title: title, content: content}
+		const hot = $('span.js_joinNum').text()
+		return {
+			title: title,
+			content: content,
+			description: description,
+			hot: hot,
+			createdAt: new Date()
+		}
 	}
 	saveContent (article){
 		if (!article|| !article.title) return ;

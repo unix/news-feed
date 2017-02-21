@@ -1,7 +1,8 @@
 <ul class="list" *ngIf="list&& list[0]">
     <li *ngFor="let item of list">
         <h2>{{item.title}}</h2>
-        <div class="text" [innerHTML]="item.content | sanitize">
+        <div class="text">
+            {{item.description | slice: 0: 200}}
         </div>
     </li>
 </ul>
