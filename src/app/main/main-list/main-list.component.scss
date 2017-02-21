@@ -1,0 +1,38 @@
+.list {
+	width: 100%;
+	height: auto;
+	min-height: 100%;
+	background: #fff;
+	margin: 0 auto;
+	padding: 10px 0;
+	>li {
+		width: 100%;
+		padding: 13px 25px;
+		height: auto;
+		border-bottom: 1px solid #D9DFEB;
+		background: #fff;
+		transition: all, 0.2s;
+		cursor: pointer;
+		>h2 {
+			font-size: 22px;
+			line-height: 25px;
+			font-weight: normal;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+		}
+		.text {
+			font-size: 16px;
+			font-weight: 300;
+			margin-top: 5px;
+			font-family: Helvetica Neue,Helvetica,Arial,sans-serif!important;
+		}
+		&:last-child {
+			border-bottom: none;
+		}
+		&:hover {
+			background: #d7dbe6;
+		}
+	}
+}
