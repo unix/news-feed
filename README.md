@@ -8,7 +8,7 @@ Angular2推出有一段时间，很多人都开始尝试使用它构建一些有
 我希望能够丰富大家的编程经验，教程中添加了一些额外的常见场景，希望你能够跟随教程快速掌握Angular2与Electron。
 
 ### 教程可参见博客系列文章：  
->使用Angular与TypeScript构建Electron应用  
+> 使用Angular与TypeScript构建Electron应用  
 * [第一节](http://wittsay.cc/articles/list/589eca2cca7ea14056705246)
 * [第二节](http://wittsay.cc/articles/list/58a08fc5c56d9d3a567f8a61)
 * [第三节](http://wittsay.cc/articles/list/58a55c7bdc931a72181c3619)
