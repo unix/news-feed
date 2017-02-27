@@ -15,6 +15,7 @@ export class MainListComponent implements OnInit {
     }
 
     public list: any[] = []
+    public page: number = 1
 
     getList (page: number){
         this.listService.getList(page)
@@ -25,12 +26,16 @@ export class MainListComponent implements OnInit {
             )
     }
 
-    goNext (id: string){
+    goNext (id: string):void{
         this.router.navigate(['/main/list', id])
+    }
+    loadMore ():void{
+        this.page ++;
+        this.getList(this.page)
     }
 
     ngOnInit (){
-        this.getList(1)
+        this.getList(this.page)
     }
 
 }
