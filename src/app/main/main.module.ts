@@ -16,7 +16,6 @@ import {SanitizePipe} from '../shared/pipe/sanitize'
 
 @NgModule({
     declarations: [
-        // SanitizePipe,
         MainComponent,
         MainListComponent,
         MainDetailComponent,

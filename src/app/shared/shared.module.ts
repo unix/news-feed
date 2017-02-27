@@ -6,7 +6,8 @@ import {CommonModule} from '@angular/common'
 import {FormsModule} from '@angular/forms'
 
 import {IpcRendererService} from './service/ipcRenderer'
-import {SanitizePipe} from './pipe/sanitize'
+import {SanitizePipe} from './pipe/sanitize';
+import {BackComponent} from './component/back/back.component'
 
 @NgModule({
     imports: [
@@ -14,17 +15,18 @@ import {SanitizePipe} from './pipe/sanitize'
         FormsModule
     ],
     declarations: [
-        SanitizePipe
+        SanitizePipe,
+        BackComponent
     ],
     exports: [
-        SanitizePipe
+        SanitizePipe,
+        BackComponent
     ],
-    providers: [
-    ]
+    providers: []
 })
 
 export class SharedModule {
-    static forRoot(): ModuleWithProviders {
+    static forRoot (): ModuleWithProviders{
         return {
             ngModule: SharedModule,
             providers: [IpcRendererService]
