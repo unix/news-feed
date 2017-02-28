@@ -1,5 +1,8 @@
 <div class="detail" *ngIf="article">
-    <app-back></app-back>
+    <div class="back" routeBack>
+        <span>返回列表</span>
+    </div>
+
     <h2>{{article.title}}</h2>
 
     <div class="article-content" [innerHTML]="article.content | sanitize">

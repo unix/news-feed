@@ -7,7 +7,7 @@ import {FormsModule} from '@angular/forms'
 
 import {IpcRendererService} from './service/ipcRenderer'
 import {SanitizePipe} from './pipe/sanitize';
-import {BackComponent} from './component/back/back.component';
+import {BackDirective} from './directive/back/back.directive';
 
 @NgModule({
     imports: [
@@ -16,11 +16,11 @@ import {BackComponent} from './component/back/back.component';
     ],
     declarations: [
         SanitizePipe,
-        BackComponent
+        BackDirective
     ],
     exports: [
         SanitizePipe,
-        BackComponent
+        BackDirective
     ],
     providers: []
 })
