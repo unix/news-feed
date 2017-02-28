@@ -14,7 +14,7 @@ Angular2推出有一段时间，很多人都开始尝试使用它构建一些有
 * [第三节](http://wittsay.cc/articles/list/58a55c7bdc931a72181c3619)
 * [第四节](http://wittsay.cc/articles/list/58aacbd3740c25b7349ee36b)
 * [第五节](http://wittsay.cc/articles/list/58ac75c0f3cd9ab6340e05c9)
-
+* [第六节](http://wittsay.cc/articles/list/58b5b10066323ea75b730d7f)
 
 ### 特点
 * 需要一定的javascript编程基础
