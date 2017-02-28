@@ -2,7 +2,6 @@ import {Component, OnInit, OnDestroy} from '@angular/core'
 import {Router, ActivatedRoute, Params} from '@angular/router'
 import {Observable, BehaviorSubject, Subscription} from 'rxjs'
 import {ListService} from './list.service'
-interface Pagination {[key: string]: any}
 
 @Component({
     selector: 'app-main-list',
