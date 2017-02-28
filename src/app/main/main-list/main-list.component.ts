@@ -2,7 +2,6 @@ import {Component, OnInit, OnDestroy} from '@angular/core'
 import {Router, ActivatedRoute, Params} from '@angular/router'
 import {Observable, BehaviorSubject, Subscription} from 'rxjs'
 import {ListService} from './list.service'
-interface Pagination {[key: string]: any}
 
 @Component({
     selector: 'app-main-list',
@@ -17,7 +16,6 @@ export class MainListComponent implements OnInit, OnDestroy {
     }
 
     public list: any[] = []
-    public page: number = 1
     public pagination: BehaviorSubject<number> = new BehaviorSubject<number>(1)
     private paginationSub: Subscription
 
