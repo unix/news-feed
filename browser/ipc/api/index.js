@@ -10,6 +10,10 @@ module.exports = {
 		screen.setSize(1000, 720)
 		return {msg: 'ok'}
 	},
+	logout: async () =>{
+		screen.setSize(700, 500)
+		return {msg: 'ok'}
+	},
 	list: async (e, page) =>{
 		try{
 			const articles = await articleService.findArticlesForPage(page)
