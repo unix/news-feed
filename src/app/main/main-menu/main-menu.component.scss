@@ -11,6 +11,7 @@
 		height: auto;
 		padding: 40px 15%;
 		overflow: hidden;
+		position: relative;
 		>.user-photo {
 			width: 70px;
 			height: 70px;
@@ -20,6 +21,25 @@
 		}
 		>.logout {
 			float: right;
+			display: inline-block;
+			font-size: 18px;
+			padding: 4px 11px;
+			color: #e8e8e8;
+			border: 1px solid transparent;
+			transition: all .15s;
+			transform: translate(-50%, -50%);
+			border-radius: 2px;
+			position: absolute;
+			top: 50%;
+			left: 65%;
+			-webkit-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			cursor: pointer;
+			&:hover {
+				border: 1px solid #e8e8e8;
+			}
 		}
 	}
 	.list {
