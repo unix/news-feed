@@ -1,6 +1,6 @@
 import {Component, OnInit} from '@angular/core'
 import {MenuService} from './menu.service'
-
+import {Router} from '@angular/router'
 
 @Component({
     selector: 'app-main-menu',
@@ -10,7 +10,19 @@ import {MenuService} from './menu.service'
 })
 export class MainMenuComponent implements OnInit {
 
-    constructor (){
+    constructor (
+        private menuService: MenuService,
+        private router: Router
+    ){
+    }
+
+    logout ():void{
+        this.menuService.logout()
+            .subscribe(
+                res =>{
+                    this.router.navigate(['/login'])
+                }
+            )
     }
 
     ngOnInit (){
