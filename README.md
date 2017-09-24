@@ -7,14 +7,9 @@ Angular 推出有一段时间，很多人都开始尝试使用它构建一些有
   
 我希望能够丰富大家的编程经验，教程中添加了一些额外的常见场景，希望你能够跟随教程快速掌握 Angular 与 Electron。
 
-### 教程可参见博客系列文章：  
-> 使用 Angular 构建 Electron 应用
-* [第一节](http://wittsay.cc/articles/list/589eca2cca7ea14056705246)
-* [第二节](http://wittsay.cc/articles/list/58a08fc5c56d9d3a567f8a61)
-* [第三节](http://wittsay.cc/articles/list/58a55c7bdc931a72181c3619)
-* [第四节](http://wittsay.cc/articles/list/58aacbd3740c25b7349ee36b)
-* [第五节](http://wittsay.cc/articles/list/58ac75c0f3cd9ab6340e05c9)
-* [第六节](http://wittsay.cc/articles/list/58b5b10066323ea75b730d7f)
+### 教程可参见博客系列文章：
+
+[使用 Angular 构建 Electron 应用](https://github.com/WittBulter/blog/tree/master/posts/electron)
 
 ### 特点
 * 需要一定的 javascript 编程基础
