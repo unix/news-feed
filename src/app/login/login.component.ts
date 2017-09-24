@@ -1,6 +1,6 @@
-import { Component, OnInit } from '@angular/core'
+import { Component } from '@angular/core'
 import { LoginService } from './login.service'
-import { ActivatedRoute, Router } from '@angular/router'
+import { Router } from '@angular/router'
 
 @Component({
   selector: 'app-login',
@@ -8,11 +8,12 @@ import { ActivatedRoute, Router } from '@angular/router'
   styleUrls: ['./login.component.scss'],
   providers: [LoginService],
 })
-export class LoginComponent implements OnInit {
+export class LoginComponent {
   
-  constructor(private loginService: LoginService,
-              private router: Router,
-              private route: ActivatedRoute) {
+  constructor(
+    private loginService: LoginService,
+    private router: Router,
+  ) {
   }
   
   
@@ -21,14 +22,7 @@ export class LoginComponent implements OnInit {
       name: name,
       pw: pw,
     })
-      .subscribe(
-        next => {
-          this.router.navigate(['/main'])
-        },
-      )
-  }
-  
-  ngOnInit() {
+    .subscribe(next => this.router.navigate(['/main']))
   }
   
 }

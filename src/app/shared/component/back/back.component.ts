@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'
+import { Component } from '@angular/core'
 import { Location } from '@angular/common'
 
 @Component({
@@ -6,7 +6,7 @@ import { Location } from '@angular/common'
   templateUrl: './back.component.html',
   styleUrls: ['./back.component.scss'],
 })
-export class BackComponent implements OnInit {
+export class BackComponent {
   
   constructor(private location: Location) {
   }
@@ -17,9 +17,6 @@ export class BackComponent implements OnInit {
     if (!this.returnOnlyOnce) return
     this.location.back()
     this.returnOnlyOnce = false
-  }
-  
-  ngOnInit() {
   }
   
 }

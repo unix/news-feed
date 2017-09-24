@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core'
+import { Component } from '@angular/core'
 import { MenuService } from './menu.service'
 import { Router } from '@angular/router'
 
@@ -8,7 +8,7 @@ import { Router } from '@angular/router'
   styleUrls: ['./main-menu.component.scss'],
   providers: [MenuService],
 })
-export class MainMenuComponent implements OnInit {
+export class MainMenuComponent {
   
   constructor(private menuService: MenuService,
               private router: Router) {
@@ -21,9 +21,6 @@ export class MainMenuComponent implements OnInit {
           this.router.navigate(['/login'])
         },
       )
-  }
-  
-  ngOnInit() {
   }
   
 }
