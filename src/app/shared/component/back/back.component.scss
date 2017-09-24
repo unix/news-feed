@@ -1,25 +1,25 @@
 .back {
-	position: fixed;
-	top: 10px;
-	width: auto;
-	height: auto;
-	-webkit-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-	cursor: pointer;
-	background: rgba(121, 130, 152, 0.88);
-	transition: all .15s;
-	box-shadow: 0 5px 10px rgba(0,0,0,.1);
-	padding: 8px 18px;
-	border-radius: 3px;
-	color: #fff;
-	&:hover {
-		background: rgba(121, 130, 152, 1);
-		box-shadow: 0 5px 10px rgba(0,0,0,.25);
-	}
-	> span {
-		font-size: 16px;
-	}
+  position: fixed;
+  top: 10px;
+  width: auto;
+  height: auto;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  background: rgba(121, 130, 152, 0.88);
+  transition: all .15s;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
+  padding: 8px 18px;
+  border-radius: 3px;
+  color: #fff;
+  &:hover {
+    background: rgba(121, 130, 152, 1);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, .25);
+  }
+  > span {
+    font-size: 16px;
+  }
 
 }
