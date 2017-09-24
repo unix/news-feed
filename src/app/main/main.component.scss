@@ -1,22 +1,22 @@
 
 .app-body {
-	height: 100%;
-	flex: 1;
-	display: flex;
-	flex-flow: row;
-	>.app-list {
-		position: fixed;
-		top: 0;
-		left: 0;
-		bottom: 0;
-		width: 260px;
-		z-index: 10;
-	}
-	>.app-content {
-		flex: 1;
-		padding-left: 260px;
-		overflow-x: hidden;
-		height: 100%;
-		background: #FCFCFC;
-	}
+  height: 100%;
+  flex: 1;
+  display: flex;
+  flex-flow: row;
+  > .app-list {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 260px;
+    z-index: 10;
+  }
+  > .app-content {
+    flex: 1;
+    padding-left: 260px;
+    overflow-x: hidden;
+    height: 100%;
+    background: #FCFCFC;
+  }
 }

@@ -1,11 +1,11 @@
 <ul class="list" *ngIf="list&& list[0]">
-    <li *ngFor="let item of list" (click)="goNext(item._id)">
-        <h2>{{item.title}}</h2>
-        <div class="text">
-            {{item.description | slice: 0: 200}}
-        </div>
-    </li>
+  <li *ngFor="let item of list" (click)="goNext(item._id)">
+    <h2>{{item.title}}</h2>
+    <div class="text">
+      {{item.description | slice: 0: 200}}
+    </div>
+  </li>
 </ul>
 <div class="more">
-    <span (click)="loadMore()">加载更多</span>
+  <span (click)="loadMore()">加载更多</span>
 </div>

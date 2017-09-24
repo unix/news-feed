@@ -1,11 +1,11 @@
 <div class="detail" *ngIf="article">
-    <div class="back" routeBack>
-        <span>返回列表</span>
-    </div>
+  <div class="back" routeBack>
+    <span>返回列表</span>
+  </div>
 
-    <h2>{{article.title}}</h2>
+  <h2>{{article.title}}</h2>
 
-    <div class="article-content" [innerHTML]="article.content | sanitize">
+  <div class="article-content" [innerHTML]="article.content | sanitize">
 
-    </div>
+  </div>
 </div>
