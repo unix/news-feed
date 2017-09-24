@@ -3,5 +3,5 @@
  */
 
 module.exports = {
-	ifeng: require('./ifeng')
+  ifeng: require('./ifeng'),
 }

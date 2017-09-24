@@ -3,7 +3,7 @@
  */
 
 module.exports = Object.assign(
-	{},
-	require('./article'),
-	require('./session')
+  {},
+  require('./article'),
+  require('./session'),
 )
